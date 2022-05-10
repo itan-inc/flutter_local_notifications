@@ -52,6 +52,7 @@ class AndroidNotificationDetails {
     this.subText,
     this.tag,
     this.colorized = false,
+    this.number,
   });
 
   /// The icon that should be used when displaying the notification.
@@ -291,4 +292,7 @@ class AndroidNotificationDetails {
   /// For most styles, the colouring will only be applied if the notification is
   /// for a foreground service notification.
   final bool colorized;
+
+  /// Sets the number of items this notification represents. May be displayed as a badge count for Launchers that support badging.
+  final int? number;
 }
